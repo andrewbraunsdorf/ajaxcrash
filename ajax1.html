@@ -18,14 +18,31 @@
 			// Open: typle, url/file, asyrs
 			xhr.open("GET", "sample.txt", true);
 			
+			console.log("READYSTATE: ", xhr.readyState);
+			
 			xhr.onload = function(){
+				console.log("READYSTATE: ", xhr.readyState);
 				if(this.status == 200){
-					console.log(this.responseText);
+					// console.log(this.responseText);
 				}
-			}
+			};
+			// xhr.onreadstatechange = function(){
+			// 	console.log("READYSTATE: ", xhr.readyState);
+			// 	if(this.readyState == 4 && this.status == 200){
+			// 		// console.log(this.responseText);
+			// 	}
+			// };
+			
 			//send request
-			xhr.send()
+			xhr.send();
 		}
+		//Ready State Values
+		// 0: request not initialized
+		// 1: server connection established
+		// 2: request received
+		// 3: processing request
+		// 4: request finished and response is ready
+		
 		
 		// HTTP Statuses
 		//200 ok
