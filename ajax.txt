@@ -1,0 +1,19 @@
+AJAX
+Asynchronous JavaScript & XML
+Set of web technologies
+Send and receive data asynchronously
+Does not interfere with current web page
+JSON has replaced XML for the most part
+
+Server to client.  Client makes common request and then goes to the server, server sends a response to the client. Webpage
+Ajax lets you request information without having to reload the entire page.  Made via ajax call.  Server returns data in json file
+Used by using XMLHttpRequest.
+
+XMLHttpRequest (XHR) Object
+API in the form of an object (properties and methods attached to it)
+Provided by the browser’s JS environment
+Methods transfer data between client/server
+Can be used with other protocols than HTTP
+Can work with data other than XML (JSON, plain text)
+
+jQuery- DOM manipulated library.
