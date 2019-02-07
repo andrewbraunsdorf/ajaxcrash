@@ -1,8 +1,8 @@
 <?php
 
-echo 'processing..';
+echo 'processing...';
 
 //Check for GET variable
 if(isset($_GET['name'])){
-	echo "GET: Your name is ". $_GET['name'];
+	echo "GET: Your name is ", $_GET['name'];
 }
