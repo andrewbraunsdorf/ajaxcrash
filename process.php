@@ -1,12 +1,12 @@
 <?php
 
 //Connect to a database
-$conn = mysqli_connect("localhost", "root", "123456", "ajaxtest");
+$conn = mysqli_connect("localhost", "andrewbraunsdorf", "", "ajaxtest");
 echo 'processing...';
 
 //Check for POST variable
 if(isset($_POST['name'])){
-	$name = mysqli_real_escape_string($conn, $_POST);
+	$name = mysqli_real_escape_string($conn, $_POST['name']);
 	echo "POST: Your name is ". $_POST['name'];
 	
 	$query = "INSERT INTO users(name) VALUES('$name')";
